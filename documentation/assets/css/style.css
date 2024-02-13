@@ -1,0 +1,189 @@
+/* fonts  */
+
+@font-face {
+    font-family: myFirstFont;
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url("../fonts/Syne-Regular.ttf");
+}
+
+@font-face {
+    font-family: myFirstFont;
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url("../fonts/Syne-Medium.ttf");
+}
+
+@font-face {
+    font-family: myFirstFont;
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+    src: url("../fonts/Syne-SemiBold.ttf");
+}
+
+@font-face {
+    font-family: myFirstFont;
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url("../fonts/Syne-Bold.ttf");
+}
+
+@font-face {
+    font-family: myFirstFont;
+    font-style: normal;
+    font-weight: 800;
+    font-display: swap;
+    src: url("../fonts/Syne-ExtraBold.ttf");
+}
+
+* {
+    font-family: myFirstFont;
+    scroll-behavior: smooth;
+}
+
+html {
+    overflow-x: hidden !important;
+}
+
+:root {
+    --primary-color: #892cdc;
+    --white-color: #fff;
+}
+
+img {
+    width: 100%;
+    max-width: 100%;
+}
+
+/* common classes */
+
+.bg-fit {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.container {
+    width: 100% !important;
+    max-width: 100% !important;
+}
+
+/* padding */
+
+.padding-32 {
+    padding: clamp(1.25rem, 1.1rem + 0.75vw, 2rem);
+}
+
+.padding-20 {
+    padding: clamp(0.625rem, 0.5rem + 0.625vw, 1.25rem);
+}
+
+.padding-12 {
+    padding: clamp(0.625rem, 0.6rem + 0.125vw, 0.75rem);
+}
+
+/* link */
+
+.link-active {
+    background-color: var(--primary-color);
+
+    & i,
+    span {
+        color: var(--white-color);
+    }
+
+    &:hover {
+        background-color: var(--primary-color) !important;
+    }
+
+    &:hover i,
+    span {
+        color: var(--white-color);
+    }
+}
+
+#about-the-template {
+    @media (max-width: 1023px) {
+        padding-top: clamp(5rem, 4.431rem + 2.845vw, 6.25rem);
+    }
+}
+
+@media (max-width: 1023px) {
+    #resources,
+    #customization-guid {
+        padding-top: 30px;
+    }
+}
+
+/* section title */
+.section-title {
+    font-size: 54px;
+    font-weight: 700;
+}
+
+.title {
+    font-size: 42px;
+    font-weight: 700;
+}
+
+.mySwiper3,
+.mySwiper2 {
+    overflow: unset !important;
+
+    & .swiper-pagination {
+        margin-bottom: -60px !important;
+    }
+
+    & .swiper-pagination-bullet {
+        background-color: var(--primary-color) !important;
+        height: 11px !important;
+        width: 11px !important;
+    }
+}
+
+/* sidebar */
+
+.sidebar {
+    @media (max-width: 1023px) {
+        width: 100%;
+        max-width: 320px;
+        position: fixed;
+        top: 0;
+        left: -100%;
+    }
+
+    @media (max-width: 480px) {
+        max-width: 100%;
+    }
+
+    &.active {
+        left: 0;
+    }
+    & #hamburger_menu_sidebar {
+        display: none;
+
+        @media (max-width: 480px) {
+            display: flex;
+        }
+    }
+}
+
+.slider-height {
+    height: clamp(16.875rem, 11.5rem + 26.875vw, 43.75rem);
+}
+
+/* sidebar card */
+
+#sidebar-card {
+    padding: 22px 22px 28px 22px;
+    background: linear-gradient(139deg, rgba(137, 44, 220, 0.6) 1.88%, var(--primary-color) 99.11%);
+
+    & img {
+        height: 100px;
+        width: 100px;
+    }
+}

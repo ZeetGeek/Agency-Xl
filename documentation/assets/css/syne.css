@@ -1,0 +1,49 @@
+/* greek */
+@font-face {
+    font-family: "Syne";
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url("../fonts/static/Syne-Regular.ttf") format("truetype");
+    unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+
+/* greek */
+@font-face {
+    font-family: "Syne";
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url("../fonts/static/Syne-Medium.ttf") format("truetype");
+    unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+
+/* greek */
+@font-face {
+    font-family: "Syne";
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+    src: url("../fonts/static/Syne-SemiBold.ttf") format("truetype");
+    unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+
+/* greek */
+@font-face {
+    font-family: "Syne";
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url("../fonts/static/Syne-Bold.ttf") format("truetype");
+    unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+
+/* greek */
+@font-face {
+    font-family: "Syne";
+    font-style: normal;
+    font-weight: 800;
+    font-display: swap;
+    src: url("../fonts/static/Syne-ExtraBold.ttf") format("truetype");
+    unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}

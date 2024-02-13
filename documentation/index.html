@@ -1,0 +1,1005 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Agency XI Figma Documentation</title>
+
+        <!-- favicon -->
+        <link rel="shortcut icon" href="assets/images/logo/favicon.svg" type="image/x-icon" />
+
+        <!-- CSS files -->
+
+        <!-- custom js -->
+        <link rel="stylesheet" href="assets/css/style.css" />
+
+        <!-- swiper css -->
+        <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
+
+        <!-- lightbox css -->
+        <link rel="stylesheet" href="assets/css/jquery.fancybox.min.css" />
+
+        <!-- iconoir icon -->
+        <link rel="stylesheet" href="assets/css/iconoir.css" />
+
+    </head>
+    <body>
+        <main class="agency-xl-documentation" id="agency-xl-documentation">
+            <div class="block lg:flex">
+                <!-- header -->
+                <header class="header block lg:hidden bg-white p-32 border-b border-neutral-200 fixed top-0 left-0 w-full z-50" id="header">
+                    <div class="flex items-center justify-between">
+                        <!-- logo -->
+                        <div>
+                            <a href="/" title="Agency Xl Logo">
+                                <img src="assets/images/logo/logo.svg" class="max-w-[200px]" alt="agency xl logo" />
+                            </a>
+                        </div>
+                        <div
+                            class="hamburger_menu h-[40px] w-[40px] cursor-pointer duration-300 bg-primary group hover:bg-primary/10 rounded-md flex items-center justify-center"
+                            id="hamburger_menu">
+                            <i class="iconoir-menu text-xxl text-white group-hover:text-primary" id="hamburger_menu_icon"></i>
+                        </div>
+                    </div>
+                </header>
+                <!-- sidebar -->
+                <aside class="sidebar lg:w-4/12 xl:w-3/12 2xl:w-[20%] flex h-screen bg-white border-r border-neutral-200 overflow-auto flex-col justify-between z-40" id="sidebar">
+                    <!-- logo and documentation links -->
+                    <div>
+                        <!-- logo -->
+                        <div class="p-32 border-b border-neutral-200">
+                            <a href="/" title="Agency Xl Logo">
+                                <img src="assets/images/logo/logo.svg" class="max-w-[200px]" alt="agency xl logo" />
+                            </a>
+                        </div>
+
+                        <!-- documentation links -->
+                        <div class="pt-30 flex flex-col justify-between">
+                            <!-- sidebar links -->
+                            <div class="px-20" id="sidebar-links">
+                                <ul class="flex flex-col gap-[8px]">
+                                    <!-- About The Template -->
+                                    <li>
+                                        <a
+                                            href="#about-the-template"
+                                            class="py-4 px-[16px] rounded-md block hover:bg-neutral-200/80 duration-300 sidebar-link link-active"
+                                            title="About The Template">
+                                            <div class="flex items-center justify-start gap-10">
+                                                <i class="iconoir-figma text-xxl text-neutral-700"></i
+                                                ><span class="text-base font-bold capitalize text-neutral-700">About The Template</span>
+                                            </div>
+                                        </a>
+                                    </li>
+
+                                    <!-- Installation Instructions -->
+                                    <li>
+                                        <a
+                                            href="#installation-instructions"
+                                            class="py-4 px-[16px] rounded-md block hover:bg-neutral-200/80 duration-300 sidebar-link"
+                                            title="Installation Instructions">
+                                            <div class="flex items-center justify-start gap-10">
+                                                <i class="iconoir-download text-xxl text-neutral-700"></i
+                                                ><span class="text-base font-bold capitalize text-neutral-700">Installation Instructions</span>
+                                            </div>
+                                        </a>
+                                    </li>
+
+                                    <!-- Customization Guide -->
+                                    <li>
+                                        <a
+                                            href="#customization-guid"
+                                            class="py-4 px-[16px] rounded-md block hover:bg-neutral-200/80 duration-300 sidebar-link"
+                                            title="Customization Guide">
+                                            <div class="flex items-center justify-start gap-10">
+                                                <i class="iconoir-fill-color text-xxl text-neutral-700"></i
+                                                ><span class="text-base font-bold capitalize text-neutral-700">Customization Guide</span>
+                                            </div>
+                                        </a>
+                                    </li>
+
+                                    <!-- Agency XI Resources -->
+                                    <li>
+                                        <a href="#resources" class="py-4 px-[16px] rounded-md block hover:bg-neutral-200/80 duration-300 sidebar-link" title="Template Overview">
+                                            <div class="flex items-center justify-start gap-10">
+                                                <i class="iconoir-media-image-folder Copy SVG Download text-xxl text-neutral-700"></i
+                                                ><span class="text-base font-bold capitalize text-neutral-700">Agency XI Resources</span>
+                                            </div>
+                                        </a>
+                                    </li>
+
+                                    <!-- Feedback and Support -->
+                                    <li>
+                                        <a
+                                            href="#feedback-and-support"
+                                            class="py-4 px-[16px] rounded-md block hover:bg-neutral-200/80 duration-300 sidebar-link"
+                                            title="Feedback and Support">
+                                            <div class="flex items-center justify-start gap-10">
+                                                <i class="iconoir-user-badge-check text-xxl text-neutral-700"></i
+                                                ><span class="text-base font-bold capitalize text-neutral-700">Feedback and Support</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- sidebar image -->
+                    <div class="px-20 mt-50 mb-20">
+                        <div class="rounded-2xl overflow-hidden flex flex-col items-start" id="sidebar-card">
+                            <img src="assets/images/logo/geek-code-lab.png" alt="Geek Code Lab Logo" />
+                            <div class="mt-[13px] mb-[27px]">
+                                <h3 class="text-white text-xxl font-bold capitalize">Explore Geek Code Lab for Design Templates</h3>
+                            </div>
+                            <div>
+                                <a
+                                    href="https://themeforest.net/user/geekcodelab/portfolio"
+                                    title="Explore Geek Code Lab for Design Templates"
+                                    target="_blank"
+                                    class="rounded-md bg-white py-10 px-20 text-primary font-bold text-base hover:bg-primary-light duration-300">
+                                    Explore Now
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </aside>
+                <!-- page content -->
+                <div class="page-content w-full lg:w-8/12 xl:w-9/12 2xl:w-[80%] h-screen bg-neutral-100 p-32 overflow-x-hidden" id="page-content">
+                    <!-- About The Template -->
+                    <section class="section w-full lg:pt-0" id="about-the-template">
+                        <!-- title -->
+                        <h1 class="text-5xl text-primary font-bold">About The Template</h1>
+
+                        <!-- description and info -->
+                        <div class="mt-10">
+                            <!-- description -->
+                            <p class="text-xxl font-semibold text-neutral-700 leading-9">
+                                Welcome to the Agency XI Digital Agency Template! This meticulously crafted template offers a seamless blend of creativity and functionality,
+                                designed to elevate your digital agency's online presence.
+                            </p>
+
+                            <!-- info  -->
+                            <div class="mt-20 flex flex-col xl:block">
+                                <span class="mt-10 text-[14px] sm:text-xl inline-block font-semibold text-neutral-600 lg:pe-5"
+                                    >Created By
+                                    <a href="https://geekwebsolution.com/" class="text-primary hover:text-primary/80 duration-300" title="Geek Web Solution" target="_blank">
+                                        geekwebsolution.com
+                                    </a></span
+                                >
+
+                                <!-- shop more templates -->
+                                <span class="mt-10 xl:border-x border-neutral-400 xl:px-5 text-[14px] sm:text-xl inline-block font-semibold text-neutral-600"
+                                    >More Templates Visit
+                                    <a href="https://geekcodelab.com/" class="text-primary hover:text-primary/80 duration-300" title="Geek Code Lab" target="_blank"
+                                        >Geek Code Lab.
+                                    </a></span
+                                >
+
+                                <!-- email -->
+                                <span class="mt-10 text-[14px] sm:text-xl inline-block font-semibold text-neutral-600 2xl:ps-5"
+                                    >Email
+                                    <a href="mailto:conrtact@geekwebsolution.com" title="contact@geekwebsolution.com" class="text-primary hover:text-primary/80 duration-300">
+                                        contact@geekwebsolution.com
+                                    </a></span
+                                >
+                            </div>
+                        </div>
+
+                        <!-- key features -->
+                        <div class="mt-50">
+                            <h3 class="text-4xl font-bold text-neutral-700">Key Features</h3>
+
+                            <!-- features -->
+                            <div class="grid xl:grid-cols-3 sm:grid-cols-2 gap-32 mt-20">
+                                <div class="p-24 rounded-xl bg-primary">
+                                    <i class="iconoir-journal-page text-white text-4xl mb-3"></i>
+                                    <h5 class="text-xxl text-white font-semibold mb-2">Two Main Home Pages</h5>
+                                    <p class="text-white/90 text-lg font-medium overflow-auto max-h-full sm:max-h-[150px] custom-scroll">
+                                        Choose from two distinct home page layouts to make a bold first impression and captivate your audience from the moment they land on your
+                                        website.
+                                    </p>
+                                </div>
+                                <div class="p-24 rounded-xl bg-[#BC6FF1]">
+                                    <i class="iconoir-multiple-pages text-black text-4xl mb-3"></i>
+
+                                    <h5 class="text-xxl text-black font-semibold mb-2">Nine Other Pages</h5>
+                                    <p class="text-black text-lg font-medium overflow-auto max-h-full sm:max-h-[150px]">
+                                        Explore a variety of additional pages carefully curated to meet the diverse needs of your digital agency, including work, services, about
+                                        us, contact, and more.
+                                    </p>
+                                </div>
+                                <div class="p-24 rounded-xl bg-white">
+                                    <i class="iconoir-view-structure-up text-neutral-700 text-4xl mb-3"></i>
+
+                                    <h5 class="text-xxl text-neutral-700 font-semibold mb-2">Figma Auto Layout</h5>
+
+                                    <p class="text-neutral-700 text-lg font-medium overflow-auto max-h-full sm:max-h-[150px]">
+                                        This template harnesses Figma's auto layout feature for flexible design customization. Easily adjust layouts, resize elements, and maintain
+                                        consistency throughout your website.
+                                    </p>
+                                </div>
+
+                                <div class="p-24 rounded-xl bg-neutral-700">
+                                    <i class="iconoir-layout-right text-white text-4xl mb-3"></i>
+                                    <h5 class="text-xxl text-white font-semibold mb-2">Sleek and Modern Design</h5>
+                                    <p class="text-white/90 text-lg font-medium overflow-auto max-h-full max-h-[150px]">
+                                        Designed with the latest design trends in mind, the Agency XI template features a sleek and modern design aesthetic that will elevate your
+                                        online presence.
+                                    </p>
+                                </div>
+                                <div class="p-24 rounded-xl bg-primary">
+                                    <i class="iconoir-crop-rotate-tl text-white text-4xl mb-3"></i>
+
+                                    <h5 class="text-xxl text-white font-semibold mb-2">Customizable Components</h5>
+                                    <p class="text-white/90 text-lg font-medium overflow-auto max-h-full max-h-[150px]">
+                                        From headers and footers to buttons and cards, the template includes a variety of customizable components that allow you to tailor your
+                                        website to your specific brand and style.
+                                    </p>
+                                </div>
+                                <div class="p-24 rounded-xl bg-[#BC6FF1]">
+                                    <i class="iconoir-frame-select text-black text-4xl mb-3"></i>
+
+                                    <h5 class="text-xxl text-black font-semibold mb-2">Easy to Use</h5>
+
+                                    <p class="text-black text-lg font-medium overflow-auto max-h-full max-h-[150px]">
+                                        Whether you're a seasoned designer or just getting started, the Agency XI template is user-friendly and intuitive, making it easy to create
+                                        professional-looking websites in no time.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- figma file -->
+                        <div class="mt-50">
+                            <h3 class="text-4xl font-bold text-neutral-700">Figma Files</h3>
+
+                            <!-- files -->
+                            <div class="mt-20 grid grid-cols-6 gap-32">
+                                <div
+                                    class="rounded-md font-semibold bg-white text-neutral-600 border border-neutral-200 p-5 text-xl fort-bold duration-300 hover:text-white hover:bg-primary text-center col-span-6 md:col-span-3">
+                                    Home Page One
+                                </div>
+                                <div
+                                    class="rounded-md font-semibold bg-white text-neutral-600 border border-neutral-200 p-5 text-xl fort-bold duration-300 hover:text-white hover:bg-primary text-center col-span-6 md:col-span-3">
+                                    Home Page Two
+                                </div>
+                                <div
+                                    class="rounded-md font-semibold bg-white text-neutral-600 border border-neutral-200 p-5 text-xl fort-bold duration-300 hover:text-white hover:bg-primary text-center col-span-6 md:col-span-3 xl:col-span-2">
+                                    About Us Page
+                                </div>
+                                <div
+                                    class="rounded-md font-semibold bg-white text-neutral-600 border border-neutral-200 p-5 text-xl fort-bold duration-300 hover:text-white hover:bg-primary text-center col-span-6 md:col-span-3 xl:col-span-2">
+                                    Service Page
+                                </div>
+                                <div
+                                    class="rounded-md font-semibold bg-white text-neutral-600 border border-neutral-200 p-5 text-xl fort-bold duration-300 hover:text-white hover:bg-primary text-center col-span-6 md:col-span-3 xl:col-span-2">
+                                    Service Info Page
+                                </div>
+                                <div
+                                    class="rounded-md font-semibold bg-white text-neutral-600 border border-neutral-200 p-5 text-xl fort-bold duration-300 hover:text-white hover:bg-primary text-center col-span-6 md:col-span-3 xl:col-span-2">
+                                    Our Work Page
+                                </div>
+                                <div
+                                    class="rounded-md font-semibold bg-white text-neutral-600 border border-neutral-200 p-5 text-xl fort-bold duration-300 hover:text-white hover:bg-primary text-center col-span-6 md:col-span-3 xl:col-span-2">
+                                    Work Info Page
+                                </div>
+                                <div
+                                    class="rounded-md font-semibold bg-white text-neutral-600 border border-neutral-200 p-5 text-xl fort-bold duration-300 hover:text-white hover:bg-primary text-center col-span-6 md:col-span-3 xl:col-span-2">
+                                    Our Team Page
+                                </div>
+                                <div
+                                    class="rounded-md font-semibold bg-white text-neutral-600 border border-neutral-200 p-5 text-xl fort-bold duration-300 hover:text-white hover:bg-primary text-center col-span-6 md:col-span-3 xl:col-span-2">
+                                    Member Info Page
+                                </div>
+                                <div
+                                    class="rounded-md font-semibold bg-white text-neutral-600 border border-neutral-200 p-5 text-xl fort-bold duration-300 hover:text-white hover:bg-primary text-center col-span-6 md:col-span-3 xl:col-span-2">
+                                    Pricing Page
+                                </div>
+                                <div
+                                    class="rounded-md font-semibold bg-white text-neutral-600 border border-neutral-200 p-5 text-xl fort-bold duration-300 hover:text-white hover:bg-primary text-center col-span-6 md:col-span-3 xl:col-span-2">
+                                    Contact Us Page
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <div class="w-full h-[0px] lg:h-[1px] bg-neutral-300 mt-70 mb-30"></div>
+
+                    <!-- Installation Instructions -->
+                    <section class="section w-full" id="installation-instructions">
+                        <!-- title -->
+                        <h1 class="text-5xl text-primary font-bold">Installation Instructions</h1>
+                        <div class="mt-10 mb-20">
+                            <p class="text-xxl font-semibold text-neutral-700 leading-9">
+                                Follow these simple steps to install the Agency XI Figma template and start customizing your digital agency website design.
+                            </p>
+                        </div>
+
+                        <div class="mt-2">
+                            <!-- steps -->
+
+                            <div thumbsSlider="" class="swiper mySwiper">
+                                <div class="swiper-wrapper">
+                                    <div class="overflow-hidden"></div>
+                                    <div class="swiper-slide">
+                                        <div class="mt-2 mb-6">
+                                            <h4 class="text-3xl font-bold text-neutral-700">Extract the Agency XI File</h4>
+
+                                            <ul class="mt-3 marker:text-neutral-500 marker:text-xxl list-disc ps-[25px] space-y-2 text-sm text-gray-600 dark:text-gray-400">
+                                                <li class="mb-1">
+                                                    <p class="text-xl font-semibold text-neutral-700">Locate the downloaded Agency XI template file on your computer.</p>
+                                                </li>
+                                                <li>
+                                                    <p class="text-xl font-semibold text-neutral-700">
+                                                        Right-click on the file and select "Extract" or "Unzip" to extract its contents.
+                                                    </p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="mt-2 mb-6">
+                                            <h4 class="text-3xl font-bold text-neutral-700">Open the Agency XI Folder > Figma Folder</h4>
+
+                                            <ul class="mt-3 marker:text-neutral-500 marker:text-xxl list-disc ps-[25px] space-y-2 text-sm text-gray-600 dark:text-gray-400">
+                                                <li class="mb-1">
+                                                    <p class="text-xl font-semibold text-neutral-700">Navigate to the extracted Agency XI folder on your computer.</p>
+                                                </li>
+                                                <li>
+                                                    <p class="text-xl font-semibold text-neutral-700">Open the "Figma" folder within the Agency XI folder.</p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="mt-2 mb-6">
+                                            <h4 class="text-3xl font-bold text-neutral-700">Drag Agency-XI.fig into Figma and Import</h4>
+
+                                            <ul class="mt-3 marker:text-neutral-500 marker:text-xxl list-disc ps-[25px] space-y-2 text-sm text-gray-600 dark:text-gray-400">
+                                                <li class="mb-1">
+                                                    <p class="text-xl font-semibold text-neutral-700">Launch the Figma desktop or web application on your computer.</p>
+                                                </li>
+                                                <li>
+                                                    <p class="text-xl font-semibold text-neutral-700">
+                                                        In the Figma interface, navigate to the "File" menu and select "Import" or simply drag and drop the "Agency-XI.fig" file
+                                                        from the Figma folder into the Figma workspace.
+                                                    </p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="mt-2 mb-6">
+                                            <h4 class="text-3xl font-bold text-neutral-700">Opening the Agency-XI Project</h4>
+
+                                            <ul class="mt-3 marker:text-neutral-500 marker:text-xxl list-disc ps-[25px] space-y-2 text-sm text-gray-600 dark:text-gray-400">
+                                                <li class="mb-1">
+                                                    <p class="text-xl font-semibold text-neutral-700">
+                                                        Once the file is imported, locate and click on the "Agency-XI" project within Figma to open it.
+                                                    </p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="mt-2 mb-6">
+                                            <h4 class="text-3xl font-bold text-neutral-700">Exploring the Template:</h4>
+
+                                            <ul class="mt-3 marker:text-neutral-500 marker:text-xxl list-disc ps-[25px] space-y-2 text-sm text-gray-600 dark:text-gray-400">
+                                                <li class="mb-1">
+                                                    <p class="text-xl font-semibold text-neutral-700">You're now ready to explore and customize the Agency XI template in Figma.</p>
+                                                </li>
+                                                <li class="mb-1">
+                                                    <p class="text-xl font-semibold text-neutral-700">
+                                                        Edit text, colors, images, and other elements to suit your project requirements.
+                                                    </p>
+                                                </li>
+                                                <li class="mb-1">
+                                                    <p class="text-xl font-semibold text-neutral-700">Save your changes regularly to ensure your progress is preserved.</p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- screenshot slides -->
+                            <div class="swiper mySwiper2">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="bg-neutral-200 shadow-lg rounded-lg border border-neutral-200 overflow-hidden slider-height">
+                                            <a data-fancybox="gallery" href="assets/images/installation/1.jpg">
+                                                <img src="assets/images/installation/1.jpg" class="object-cover md:object-auto h-full object-top" alt="installation image 1" />
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="bg-neutral-200 shadow-lg rounded-lg border border-neutral-200 overflow-hidden slider-height">
+                                            <a data-fancybox="gallery" href="assets/images/installation/2.jpg">
+                                                <img src="assets/images/installation/2.jpg" class="object-cover md:object-auto h-full object-top" alt="installation image 2" />
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="bg-neutral-200 shadow-lg rounded-lg border border-neutral-200 overflow-hidden slider-height">
+                                            <a data-fancybox="gallery" href="assets/images/installation/3.jpg">
+                                                <img src="assets/images/installation/3.jpg" class="object-cover md:object-auto h-full object-top" alt="installation image 3" />
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="bg-neutral-200 shadow-lg rounded-lg border border-neutral-200 overflow-hidden slider-height">
+                                            <a data-fancybox="gallery" href="assets/images/installation/4.jpg">
+                                                <img src="assets/images/installation/4.jpg" class="object-cover md:object-auto h-full object-top" alt="installation image 4" />
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="bg-neutral-200 shadow-lg rounded-lg border border-neutral-200 overflow-hidden slider-height">
+                                            <a data-fancybox="gallery" href="assets/images/installation/5.jpg">
+                                                <img src="assets/images/installation/5.jpg" class="object-cover md:object-auto h-full object-top" alt="installation image 5" />
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-pagination"></div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <div class="w-full h-[0px] lg:h-[1px] bg-neutral-300 mt-90 mb-30"></div>
+
+                    <!-- Customization Guide -->
+                    <section class="section w-full" id="customization-guid">
+                        <!-- title -->
+                        <h1 class="text-5xl text-primary font-bold">Customization Guide</h1>
+                        <div class="my10">
+                            <p class="text-xxl font-semibold text-neutral-700 leading-9">
+                                The Agency XI Figma template offers extensive customization options to tailor your digital agency website to your specific needs and preferences.
+                                Follow these guidelines to make the most out of the template's flexibility.
+                            </p>
+                        </div>
+
+                        <!-- customization steps -->
+                        <div class="mt-7">
+                            <!-- Unlock Layers and Grids -->
+                            <div class="mb-14">
+                                <h3 class="text-4xl font-bold text-neutral-700">Unlock Layers and Hide Grids</h3>
+                                <ul class="mt-3 marker:text-neutral-500 marker:text-xxl list-disc ps-[25px] space-y-2 text-sm text-gray-600 dark:text-gray-400">
+                                    <li class="mb-1">
+                                        <p class="text-xl font-semibold text-neutral-700">
+                                            To unlock frames, you have two options: either click on the lock icon located in the toolbar, or select all frames and press Ctrl +
+                                            Shift + L on your keyboard.
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p class="text-xl font-semibold text-neutral-700">
+                                            To hide frames, start by selecting the specific frame you wish to hide. Then, click on the eye icon located in the toolbar to conceal
+                                            the layout grid.
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p class="text-xl font-semibold text-neutral-700">
+                                            Additionally, if you want to toggle the visibility of layout grids for a selected frame, simply press Shift + R on your keyboard. This
+                                            allows you to quickly show or hide the layout grids as needed.
+                                        </p>
+                                    </li>
+                                </ul>
+                                <!-- slider -->
+                                <div class="slider my-7">
+                                    <div class="swiper mySwiper3">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <div class="bg-neutral-200 shadow-lg rounded-lg border border-neutral-200 overflow-hidden">
+                                                    <a data-fancybox="gallery" href="assets/images/customization-guide/unlock-layers-and-hide-grids/1.jpg">
+                                                        <img src="assets/images/customization-guide/unlock-layers-and-hide-grids/1.jpg" alt="installation image 1" />
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="bg-neutral-200 shadow-lg rounded-lg border border-neutral-200 overflow-hidden">
+                                                    <a data-fancybox="gallery" href="assets/images/customization-guide/unlock-layers-and-hide-grids/2.jpg">
+                                                        <img src="assets/images/customization-guide/unlock-layers-and-hide-grids/2.jpg" alt="installation image 2" />
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-pagination"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Text Customization -->
+                            <div class="mb-14">
+                                <h3 class="text-4xl font-bold text-neutral-700">Text Customization</h3>
+                                <ul class="mt-3 marker:text-neutral-500 marker:text-xxl list-disc ps-[25px] space-y-2 text-sm text-gray-600 dark:text-gray-400">
+                                    <li class="mb-1">
+                                        <p class="text-xl font-semibold text-neutral-700">
+                                            To edit any text, simply double-click on it. Figma provides pre-defined text and heading styles that you can conveniently utilize for
+                                            your designs. These styles offer consistency and efficiency in formatting text elements across your project. Utilize them to maintain a
+                                            cohesive visual identity and streamline your design process.
+                                        </p>
+                                    </li>
+                                </ul>
+                                <!-- slider -->
+                                <div class="slider my-7">
+                                    <div class="swiper mySwiper3">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <div class="bg-neutral-200 shadow-lg rounded-lg border border-neutral-200 overflow-hidden">
+                                                    <a data-fancybox="gallery" href="assets/images/customization-guide/text-customization/1.png">
+                                                        <img src="assets/images/customization-guide/text-customization/1.png" alt="installation image 1" />
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="bg-neutral-200 shadow-lg rounded-lg border border-neutral-200 overflow-hidden">
+                                                    <a data-fancybox="gallery" href="assets/images/customization-guide/text-customization/2.png">
+                                                        <img src="assets/images/customization-guide/text-customization/2.png" alt="installation image 2" />
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-pagination"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Color Customization -->
+                            <div class="mb-14">
+                                <h3 class="text-4xl font-bold text-neutral-700">Color Customization</h3>
+                                <ul class="mt-3 marker:text-neutral-500 marker:text-xxl list-disc ps-[25px] space-y-2 text-sm text-gray-600 dark:text-gray-400">
+                                    <li class="mb-1">
+                                        <p class="text-xl font-semibold text-neutral-700">
+                                            Figma offers pre-defined color styles that you can readily apply to your design elements, ensuring consistency and efficiency. If
+                                            needed, you can modify the default color variables to match your project's requirements. Additionally, you have the option to search for
+                                            specific color variables to quickly find the ones you need. To customize the default color variable, simply click on the designated area
+                                            to open the "Edit Color Style" box. From there, you can choose the color you want to use from the available options. This streamlined
+                                            process allows you to efficiently manage and customize color styles within your design projects.
+                                        </p>
+                                    </li>
+                                </ul>
+                                <!-- slider -->
+                                <div class="slider my-7">
+                                    <div class="swiper mySwiper3">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <div class="bg-neutral-200 shadow-lg rounded-lg border border-neutral-200 overflow-hidden">
+                                                    <a data-fancybox="gallery" href="assets/images/customization-guide/color-customization/1.png">
+                                                        <img src="assets/images/customization-guide/color-customization/1.png" alt="installation image 1" />
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="bg-neutral-200 shadow-lg rounded-lg border border-neutral-200 overflow-hidden">
+                                                    <a data-fancybox="gallery" href="assets/images/customization-guide/color-customization/2.png">
+                                                        <img src="assets/images/customization-guide/color-customization/2.png" alt="installation image 2" />
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="bg-neutral-200 shadow-lg rounded-lg border border-neutral-200 overflow-hidden">
+                                                    <a data-fancybox="gallery" href="assets/images/customization-guide/color-customization/3.png">
+                                                        <img src="assets/images/customization-guide/color-customization/3.png" alt="installation image 3" />
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-pagination"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Image Replacement -->
+                            <div class="mb-14">
+                                <h3 class="text-4xl font-bold text-neutral-700">Image Replacement</h3>
+                                <ul class="mt-3 marker:text-neutral-500 marker:text-xxl list-disc ps-[25px] space-y-2 text-sm text-gray-600 dark:text-gray-400">
+                                    <li class="mb-1">
+                                        <p class="text-xl font-semibold text-neutral-700">
+                                            To add an image to your design, begin by selecting the "Place Image" frame. Ensure that this frame is named "Place Image" for clarity.
+                                            Confirm that the frame name is indeed "Place Image" to avoid confusion.
+                                        </p>
+                                    </li>
+
+                                    <li class="mb-1">
+                                        <p class="text-xl font-semibold text-neutral-700">
+                                            Once you've selected the "Place Image" frame, proceed to change the image within it. Click on the fill option to initiate this process.
+                                            Upon clicking, a dialog box will appear on your screen. Within this box, select the "Choose Image" option to navigate to and select the
+                                            image you wish to use from your device.
+                                        </p>
+                                    </li>
+
+                                    <li class="mb-1">
+                                        <p class="text-xl font-semibold text-neutral-700">
+                                            After selecting the desired image, click on "Open" to finalize your selection and insert the image into the designated frame. This
+                                            sequence of steps ensures a seamless process for adding images to your design within Figma.
+                                        </p>
+                                    </li>
+                                </ul>
+                                <!-- slider -->
+                                <div class="slider my-7">
+                                    <div class="swiper mySwiper3">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <div class="bg-neutral-200 shadow-lg rounded-lg border border-neutral-200 overflow-hidden">
+                                                    <a data-fancybox="gallery" href="assets/images/customization-guide/image-replacement/1.png">
+                                                        <img src="assets/images/customization-guide/image-replacement/1.png" alt="installation image 1" />
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="bg-neutral-200 shadow-lg rounded-lg border border-neutral-200 overflow-hidden">
+                                                    <a data-fancybox="gallery" href="assets/images/customization-guide/image-replacement/2.png">
+                                                        <img src="assets/images/customization-guide/image-replacement/2.png" alt="installation image 2" />
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="bg-neutral-200 shadow-lg rounded-lg border border-neutral-200 overflow-hidden">
+                                                    <a data-fancybox="gallery" href="assets/images/customization-guide/image-replacement/3.png">
+                                                        <img src="assets/images/customization-guide/image-replacement/3.png" alt="installation image 3" />
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-pagination"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Manage Prototype -->
+                            <div class="mb-14">
+                                <h3 class="text-4xl font-bold text-neutral-700">Manage Prototype</h3>
+
+                                <ul class="mt-3 marker:text-neutral-500 marker:text-xxl list-disc ps-[25px] space-y-2 text-sm text-gray-600 dark:text-gray-400">
+                                    <li class="mb-1">
+                                        <p class="text-xl font-semibold text-neutral-700">
+                                            To enable Prototype mode in Figma, simply click on the "Prototype" tab. Within Prototype mode, you'll notice a blue navigation line that
+                                            serves as a link between different frames or pages. You can easily drag and drop this blue line to connect it to another page,
+                                            facilitating seamless navigation within your design.
+                                        </p>
+                                    </li>
+
+                                    <li class="mb-1">
+                                        <p class="text-xl font-semibold text-neutral-700">
+                                            To manage the navigation line, click on it to access options such as editing its properties or deleting it if necessary.
+                                        </p>
+                                    </li>
+
+                                    <li class="mb-1">
+                                        <p class="text-xl font-semibold text-neutral-700">
+                                            Once you've completed creating your prototype and linked the necessary frames, you can preview your prototype by clicking on the play
+                                            icon. This allows you to simulate the interaction flow and experience how users will navigate through your design.
+                                        </p>
+                                    </li>
+                                </ul>
+                                <!-- slider -->
+                                <div class="slider my-7">
+                                    <div class="swiper mySwiper3">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <div class="bg-neutral-200 shadow-lg rounded-lg border border-neutral-200 overflow-hidden">
+                                                    <a data-fancybox="gallery" href="assets/images/customization-guide/manage-prototype/1.png">
+                                                        <img src="assets/images/customization-guide/manage-prototype/1.png" alt="installation image 1" />
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="bg-neutral-200 shadow-lg rounded-lg border border-neutral-200 overflow-hidden">
+                                                    <a data-fancybox="gallery" href="assets/images/customization-guide/manage-prototype/2.png">
+                                                        <img src="assets/images/customization-guide/manage-prototype/2.png" alt="installation image 2" />
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="bg-neutral-200 shadow-lg rounded-lg border border-neutral-200 overflow-hidden">
+                                                    <a data-fancybox="gallery" href="assets/images/customization-guide/manage-prototype/3.png">
+                                                        <img src="assets/images/customization-guide/manage-prototype/3.png" alt="installation image 3" />
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-pagination"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Save and Share -->
+                            <div>
+                                <h3 class="text-4xl font-bold text-neutral-700">Save and Share</h3>
+                                <ul class="mt-3 marker:text-neutral-500 marker:text-xxl list-disc ps-[25px] space-y-2 text-sm text-gray-600 dark:text-gray-400">
+                                    <li class="mb-1">
+                                        <p class="text-xl font-semibold text-neutral-700">
+                                            After finalizing your design in Figma, the next step is to share it with your teammates or clients. To do so, click on the "Share"
+                                            button located in the upper right corner of the Figma interface.
+                                        </p>
+                                    </li>
+
+                                    <li class="mb-1">
+                                        <p class="text-xl font-semibold text-neutral-700">
+                                            After finalizing your design in Figma, the next step is to share it with your teammates or clients. To do so, click on the "Share"
+                                            button located in the upper right corner of the Figma interface. Once you've clicked on the share button, a dialog box will appear where
+                                            you can add the email addresses of your teammates or clients. Additionally, you can specify the permissions you want to grant them, such
+                                            as view-only or edit access.
+                                        </p>
+                                    </li>
+
+                                    <li class="mb-1">
+                                        <p class="text-xl font-semibold text-neutral-700">
+                                            After adding the email addresses and setting the permissions, simply click on the "Invite" button to share your design with them. This
+                                            action sends an invitation email to the specified recipients, allowing them to access and collaborate on the Figma file according to the
+                                            permissions you've granted.
+                                        </p>
+                                    </li>
+                                </ul>
+                                <!-- slider -->
+                                <div class="slider my-7">
+                                    <div class="swiper mySwiper3">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <div class="bg-neutral-200 shadow-lg rounded-lg border border-neutral-200 overflow-hidden">
+                                                    <a data-fancybox="gallery" href="assets/images/customization-guide/save-and-share/1.png">
+                                                        <img src="assets/images/customization-guide/save-and-share/1.png" alt="installation image 1" />
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="bg-neutral-200 shadow-lg rounded-lg border border-neutral-200 overflow-hidden">
+                                                    <a data-fancybox="gallery" href="assets/images/customization-guide/save-and-share/2.png">
+                                                        <img src="assets/images/customization-guide/save-and-share/2.png" alt="installation image 2" />
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-pagination"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <div class="w-full h-[0px] lg:h-[1px] bg-neutral-300 mt-70 mb-30"></div>
+
+                    <!-- Resources -->
+                    <section class="section w-full" id="resources">
+                        <!-- title -->
+                        <h1 class="text-5xl text-primary font-bold">Agency XI Resources</h1>
+                        <div class="my10">
+                            <p class="text-xxl font-semibold text-neutral-700 leading-9">
+                                Discover the key resources behind Agency XI's design, including Dribbble for inspiration, Coolors for color palettes, Google Fonts for typography,
+                                and more. Elevate your website with high-quality assets from Shutterstock, Pixels, and Iconoir icons
+                            </p>
+                        </div>
+
+                        <!-- all resources -->
+                        <div class="grid 2xl:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-32 mt-8">
+                            <!-- resource box -->
+                            <a href="https://dribbble.com/" title="Dribbble for Inspiration" target="_blank" class="hover:translate-y-[-10px]  duration-300">
+                                <div class="p-24 rounded-xl border border-neutral-300 overflow-hidden bg-fit bg-[#ea4c89]" id="dribble">
+                                    <div class="h-70 w-70 rounded-2xl flex mb-3 items-center justify-center bg-white">
+                                        <img src="assets/images/resource-logo/1.png" class="h-[40px] w-[40px]" alt="Dribble Logo" />
+                                    </div>
+
+                                    <h5 class="text-xxl text-white font-semibold mb-2">Dribbble for Inspiration</h5>
+                                    <p class="text-white/90 text-lg font-medium overflow-auto max-h-full sm:max-h-[170px]">
+                                       Dribbble serves as a platform where designers showcase their work, offering inspiration for creative projects. Please be aware that direct use or reproduction of Dribbble designs may be subject to copyright restrictions.
+                                    </p>
+                                </div>
+                            </a>
+
+                            <!-- resource box -->
+                            <a href="https://coolors.co/" title="Coolors for Color Palette" target="_blank" class="hover:translate-y-[-10px]  duration-300">
+                                <div class="p-24 rounded-xl bg-[#0066ff] border border-neutral-300 overflow-hidden bg-fit" id="coolors">
+                                    <div class="h-70 w-70 rounded-2xl flex mb-3 items-center justify-center bg-white">
+                                        <img src="assets/images/resource-logo/2.png" class="h-[40px] w-[40px]" alt="Coolors Logo" />
+                                    </div>
+                                    <h5 class="text-xxl text-white font-semibold mb-2">Coolors for Color Palette</h5>
+                                    <p class="text-white/90 text-lg font-medium overflow-auto max-h-full sm:max-h-[170px]">
+                                       Coolors is a color scheme generator that helps designers create cohesive color palettes for their projects. Use Coolors to explore, create, and effortlessly customize vibrant color palettes that complement your design vision.
+                                    </p>
+                                </div>
+                            </a>
+
+                            <a href="https://fonts.google.com/" title="Google Fonts for Fonts" target="_blank" class="hover:translate-y-[-10px]  duration-300">
+                                <div class="p-24 rounded-xl bg-[#1a73e8] border border-neutral-300 overflow-hidden bg-fit" id="google-fonts">
+                                    <div class="h-70 w-70 rounded-2xl flex mb-3 items-center justify-center bg-white">
+                                        <img src="assets/images/resource-logo/3.png" class="h-[40px] w-[40px]" alt="Google Fonts Logo" />
+                                    </div>
+                                    <h5 class="text-xxl text-white font-semibold mb-2">Google Fonts for Fonts</h5>
+                                    <p class="text-white/90 text-lg font-medium overflow-auto max-h-full sm:max-h-[170px]">
+                                        Google Fonts offers an extensive library of free, open-source fonts that can be easily integrated into web projects. Choose from a diverse
+                                        selection of fonts to enhance readability, aesthetics, and versatility in your designs.
+                                    </p>
+                                </div>
+                            </a>
+
+                            <a href="https://www.shutterstock.com/" title="Shutterstock for Images" target="_blank" class="hover:translate-y-[-10px]  duration-300">
+                                <!-- resource box -->
+                                <div class="p-24 rounded-xl bg-[#fc3441] border border-neutral-300 overflow-hidden bg-fit" id="sutterstock-and-pixels">
+                                    <div class="h-70 w-70 rounded-2xl flex mb-3 items-center justify-center bg-white">
+                                        <img src="assets/images/resource-logo/4.png" class="h-[30px] w-[30px]" alt="Shutterstock Logo" />
+                                    </div>
+                                    <h5 class="text-xxl text-white font-semibold mb-2">Shutterstock for Images</h5>
+                                    <p class="text-white/90 text-lg font-medium overflow-auto max-h-full sm:max-h-[170px]">
+                                        Shutterstock is popular platforms for accessing high-quality stock images and photos. These resources offer a wide range of visual assets to
+                                        enhance the visual appeal and creativity of your designs.
+                                    </p>
+                                </div>
+                            </a>
+
+                            <a href="https://iconoir.com/" title="Iconoir for Icons" target="_blank" class="hover:translate-y-[-10px]  duration-300">
+                                <!-- resource box -->
+                                <div class="p-24 rounded-xl bg-[#e0e6eb] border border-neutral-300 overflow-hidden bg-fit" id="iconoir">
+                                    <div class="h-70 w-70 rounded-2xl flex mb-3 items-center justify-center bg-white">
+                                        <i class="iconoir-peace-hand text-4xl"></i>
+                                    </div>
+                                    <h5 class="text-xxl text-neutral-700 font-semibold mb-2">Iconoir for Icons</h5>
+                                    <p class="text-neutral-600 text-lg font-medium overflow-auto max-h-full sm:max-h-[170px]">
+                                        Iconoir is a library of open-source icons designed to complement various design projects. With Iconoir, you can easily find and integrate
+                                        icons into your designs to enhance visual communication and user experience.
+                                    </p>
+                                </div>
+                            </a>
+
+                            <a href="https://www.figma.com/community" title="Figma Community" target="_blank" class="hover:translate-y-[-10px] duration-300">
+                                <!-- resource box -->
+                                <div class="p-24 rounded-xl bg-white border border-neutral-300 overflow-hidden bg-fit" id="figma-community">
+                                    <div class="h-70 w-70 rounded-2xl flex mb-3 items-center justify-center bg-neutral-100">
+                                        <img src="assets/images/resource-logo/5.png" class="h-[40px] w-[40px]" alt="Shutterstock Logo" />
+                                    </div>
+                                    <h5 class="text-xxl text-neutral-700 font-semibold mb-2">Figma Community</h5>
+                                    <p class="text-neutral-600 text-lg font-medium overflow-auto max-h-full sm:max-h-[170px]">
+                                       The Figma Community is a platform where designers share and discover resources, including templates and design assets. Explore the Figma Community to find additional inspiration for your design projects.
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                    </section>
+
+                    <div class="w-full h-[0px] lg:h-[1px] bg-neutral-300 mt-70 mb-30"></div>
+
+                    <!-- Feedback and Support -->
+                    <section class="section w-full" id="feedback-and-support">
+                        <!-- title -->
+                        <h1 class="text-5xl text-primary font-bold">Feedback and Support</h1>
+                        <div class="my10">
+                            <p class="text-xxl font-semibold text-neutral-700 leading-9">
+                                Thank you once again for acquiring this template. As mentioned earlier, if you have any inquiries, please feel free to reach out to us via email at
+                                <a href="mailto:support@geekcodelab.com" class="text-primary hover:text-primary/80" title="support@geekcodelab.com">support@geekcodelab.com</a>
+                                or via Skype message: rajanikant.kakadiya25. We are dedicated to assisting you. Don't hesitate to contact us; we're here to help!
+                            </p>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </main>
+
+        <!-- JS files -->
+        <!-- tailwind js -->
+        <script src="assets/js/tailwind.js"></script>
+        <!-- custom js -->
+        <script src="assets/js/index.js"></script>
+        <!-- lightbox js -->
+        <script src="assets/js/jquery.min.js"></script>
+        <!-- swiper js -->
+        <script src="assets/js/jquery.fancybox.min.js"></script>
+        <script src="assets/js/swiper-bundle.min.js"></script>
+
+        <!-- tailwind settings -->
+        <script>
+            tailwind.config = {
+                theme: {
+                    extend: {
+                        // custom colors
+                        colors: {
+                            primary: "#892CDC",
+                            "primary-light": "#DCAAFF",
+                        },
+
+                        // custom font sizes
+                        fontSize: {
+                            vsm: "0.8rem",
+                            sm: "clamp(0.75rem, 0.725rem + 0.125vw, 0.875rem)",
+                            base: "clamp(0.875rem, 0.85rem + 0.125vw, 1rem)",
+                            xl: "clamp(1rem, 0.95rem + 0.25vw, 1.25rem)",
+                            xxl: "clamp(1.25rem, 1.2rem + 0.25vw, 1.5rem)",
+                            "3xl": "clamp(1.5rem, 1.4rem + 0.5vw, 2rem)",
+                            "4xl": "clamp(1.75rem, 1.6rem + 0.75vw, 2.5rem)",
+                            "5xl": "clamp(2.125rem, 1.875rem + 1.25vw, 3.375rem)",
+                        },
+                        // custom spacing
+                        spacing: {
+                            10: "clamp(0.5rem, 0.475rem + 0.125vw, 0.625rem)",
+                            20: "clamp(1rem, 0.95rem + 0.25vw, 1.25rem)",
+                            24: "clamp(1.125rem, 1.05rem + 0.375vw, 1.5rem)",
+                            30: "clamp(1.25rem, 1.125rem + 0.625vw, 1.875rem)",
+                            32: "clamp(1.25rem, 1.1rem + 0.75vw, 2rem)",
+                            40: " clamp(1.875rem, 1.75rem + 0.625vw, 2.5rem)",
+                            50: "clamp(2.1875rem, 2rem + 0.9375vw, 3.125rem)",
+                            60: "clamp(2.5rem, 2.25rem + 1.25vw, 3.75rem)",
+                            70: "clamp(2.8125rem, 2.5rem + 1.5625vw, 4.375rem)",
+                            80: "clamp(3.125rem, 2.75rem + 1.875vw, 5rem)",
+                            90: "clamp(3.4375rem, 3rem + 2.1875vw, 5.625rem)",
+                            100: "clamp(3.75rem, 3.25rem + 2.5vw, 6.25rem)",
+                        },
+                    },
+                },
+            };
+        </script>
+
+        <!-- lightbox settings -->
+        <script>
+            $(document).ready(function () {
+                $("[data-fancybox]").fancybox({
+                    loop: true,
+                    arrows: true,
+                    infobar: true,
+                    buttons: ["slideShow", "fullScreen", "thumbs", "close", "share", "download", "zoom", "prev", "next"],
+                    transitionEffect: "fade",
+                    transitionDuration: 500,
+                    idleTime: 3000,
+                    protect: true,
+                });
+            });
+        </script>
+
+        <!-- swiper settings -->
+        <script>
+            var swiper = new Swiper(".mySwiper", {
+                slidesPerView: 1,
+                freeMode: true,
+                watchSlidesProgress: true,
+            });
+
+            var swiper2 = new Swiper(".mySwiper2", {
+                pagination: {
+                    el: ".swiper-pagination",
+                },
+                scrollbar: {
+                    el: ".swiper-scrollbar",
+                    hide: false,
+                },
+                autoplay: {
+                    delay: 2500,
+                    disableOnInteraction: false,
+                    pauseOnMouseEnter: true,
+                },
+                grabCursor: true,
+                effect: "creative",
+                thumbs: {
+                    swiper: swiper,
+                },
+                creativeEffect: {
+                    prev: {
+                        shadow: true,
+                        translate: ["-120%", 0, -500],
+                    },
+                    next: {
+                        shadow: true,
+                        translate: ["120%", 0, -500],
+                    },
+                },
+            });
+
+            var swiper = new Swiper(".mySwiper3", {
+                pagination: {
+                    el: ".swiper-pagination",
+                },
+                breakpoints: {
+                    // slidesPerView: 2,
+                    1023: {
+                        slidesPerView: 2,
+                        spaceBetween: 32,
+                    },
+                },
+                freeMode: true,
+                spaceBetween: 32,
+                watchSlidesProgress: true,
+                autoplay: {
+                    delay: 2500,
+                    disableOnInteraction: false,
+                    pauseOnMouseEnter: true,
+                },
+            });
+        </script>
+    </body>
+</html>
